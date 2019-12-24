@@ -15,7 +15,6 @@ interface HandlerDetails {
 
 function ChildComponent(props: ChildProps) {
   const {handleData, data} = props;
-
   return(
     <div>
       <button
@@ -24,13 +23,11 @@ function ChildComponent(props: ChildProps) {
       >
         Click Mei!
       </button>
-
       <div>
         {data.get('age', 0) === 31 &&
         <img src={mei} alt="Mei"/>
         }
       </div>
-
     </div>
   );
 }
